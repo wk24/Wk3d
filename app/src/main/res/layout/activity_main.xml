@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.wuk.wk3d.SensorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:scaleX="1.2"
+            android:scaleY="1.1"
+            android:layout_height="match_parent" />
+
+    </com.wuk.wk3d.SensorLayout>
+
+    <ImageView
+        android:id="@+id/iv_mid"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom"
+        android:layout_height="200dp" />
+
+
+    <com.wuk.wk3d.SensorLayout
+        android:id="@+id/sensor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_foreground"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_marginStart="16dp"
+            android:layout_height="150dp" />
+
+    </com.wuk.wk3d.SensorLayout>
+
+</FrameLayout>
